@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  namespace :api do
+    get 'stories/api/characters'
+    get 'stories/api/chapters'
+    get 'stories/api/members'
+    get 'stories/api/teams'
+  end
   # EXAMPLE HTML ROUTE
   # get "/photos" => "photos#index"
 

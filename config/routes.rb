@@ -16,43 +16,43 @@ Rails.application.routes.draw do
     post "/sessions" => "sessions#create"
 
     get "stories" => "stories#index"
-    get "stories" => "stories#show"
+    get "stories/:id" => "stories#show"
     post "stories" =>
     "stories#create"
-    patch "stories" => "stories#update"
-    delete "stories" => 
-    "stories#delete"
+    patch "stories/:id" => "stories#update"
+    delete "stories/:id" => 
+    "stories#destroy"
 
     get "chapters" => "chapters#index"
-    get "chapters" => "chapters#show"
+    get "chapters/:id" => "chapters#show"
     post "chapters" =>
     "chapters#create"
-    patch "chapters" => "chapters#update"
-    delete "chapters" => 
-    "chapters#delete"
+    patch "chapters/:id" => "chapters#update"
+    delete "chapters/:id" => 
+    "chapters#destroy"
 
     get "characters" => "characters#index"
-    get "characters" => "characters#show"
+    get "characters/:id" => "characters#show"
     post "characters" =>
     "characters#create"
-    patch "characters" => "characters#update"
-    delete "characters" => 
-    "characters#delete"
+    patch "characters/:id" => "characters#update"
+    delete "characters/:id" => 
+    "characters#destroy"
 
     get "teams" => "teams#index"
-    get "teams" => "teams#show"
+    get "teams/:id" => "teams#show"
     post "teams" =>
     "teams#create"
-    patch "teams" => "teams#update"
-    delete "teams" => 
-    "teams#delete"
+    patch "teams/:id" => "teams#update"
+    delete "teams/:id" => 
+    "teams#destroy"
 
     get "members" => "members#index"
-    get "members" => "members#show"
+    get "members/:id" => "members#show"
     post "members" =>
     "members#create"
-    patch "members" => "members#update"
-    delete "members" => 
-    "members#delete"
+    patch "members/:id" => "members#update"
+    delete "members/:id" => 
+    "members#destroy"
   end
 end

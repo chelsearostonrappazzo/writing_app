@@ -1,0 +1,6 @@
+{
+  id: chapter.id,
+  title: chapter.title,
+  content: chapter.content,
+  story_id: chapter.story_id
+}

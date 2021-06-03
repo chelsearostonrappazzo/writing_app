@@ -23,7 +23,7 @@ Rails.application.routes.draw do
     delete "stories/:id" => 
     "stories#destroy"
 
-    get "chapters" => "chapters#index"
+    get "stories/:id/chapters" => "chapters#index"
     get "chapters/:id" => "chapters#show"
     post "chapters" =>
     "chapters#create"

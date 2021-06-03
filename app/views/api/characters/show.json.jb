@@ -1,0 +1,1 @@
+render partial: "characer.json.jb", locals: {character: @character}

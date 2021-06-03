@@ -1,0 +1,7 @@
+{
+  id: character.id,
+  name: character.name,
+  age: character.age,
+  description: character.description,
+  story_id: character.story_id
+}

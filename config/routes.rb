@@ -31,7 +31,7 @@ Rails.application.routes.draw do
     delete "chapters/:id" => 
     "chapters#destroy"
 
-    get "characters" => "characters#index"
+    get "stories/:id/characters" => "characters#index"
     get "characters/:id" => "characters#show"
     post "characters" =>
     "characters#create"

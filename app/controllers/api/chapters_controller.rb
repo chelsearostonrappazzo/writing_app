@@ -10,10 +10,11 @@ class Api::ChaptersController < ApplicationController
   end
 
   def create 
+    story_id = params[:id]
     @chapter = Chapter.new(
       title: params[:title],
       content: params[:content],
-      story_id: params[:story_id]
+      story_id: story_id
     )
     if @chapter.save
       render json: {message: "Chapter saved!"}

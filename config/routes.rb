@@ -25,7 +25,7 @@ Rails.application.routes.draw do
 
     get "stories/:id/chapters" => "chapters#index"
     get "chapters/:id" => "chapters#show"
-    post "chapters" =>
+    post "stories/:id/chapters" =>
     "chapters#create"
     patch "chapters/:id" => "chapters#update"
     delete "chapters/:id" => 
@@ -33,7 +33,7 @@ Rails.application.routes.draw do
 
     get "stories/:id/characters" => "characters#index"
     get "characters/:id" => "characters#show"
-    post "characters" =>
+    post "stories/:id/characters" =>
     "characters#create"
     patch "characters/:id" => "characters#update"
     delete "characters/:id" => 
